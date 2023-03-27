@@ -17,7 +17,6 @@ public class Controller {
 
     @PostMapping("/posts")
     public void save(@RequestBody Post post){
-        System.out.println(post);
         service.save(post);
     }
 
