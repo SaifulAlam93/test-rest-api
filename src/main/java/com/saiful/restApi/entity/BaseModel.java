@@ -41,7 +41,6 @@ public abstract class BaseModel implements Serializable {
 
     @PrePersist
     public void prePersist() {
-//        this.createdAt = LocalDateTime.now();
         this.active = true;
     }
 

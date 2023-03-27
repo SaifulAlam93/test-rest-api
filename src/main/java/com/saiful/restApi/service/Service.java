@@ -9,10 +9,8 @@ import java.util.List;
 
 @org.springframework.stereotype.Service
 public class Service {
-
     @Autowired
     PostRepo postRepo;
-
 
     public List<Post> findAll() {
         return postRepo.findAll();
@@ -33,7 +31,6 @@ public class Service {
             postRepo.save(postNew);
         }
     }
-
     public Post getById(Long id) {
        return postRepo.findById(id).orElse(new Post());
     }
