@@ -17,6 +17,7 @@ public class Controller {
 
     @PostMapping("/posts")
     public void save(@RequestBody Post post){
+        System.out.println(post);
         service.save(post);
     }
 
@@ -32,8 +33,6 @@ public class Controller {
 
     @DeleteMapping("/posts/{id}")
     public void delete(@PathVariable("id") Long id){
-
-        System.out.println(id);
         service.delete(id);
     }
 
