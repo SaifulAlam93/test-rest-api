@@ -15,4 +15,6 @@ public class Post extends BaseModel {
 
     private String title;
     private String body;
+
+
 }
