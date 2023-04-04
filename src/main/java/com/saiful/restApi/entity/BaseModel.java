@@ -13,7 +13,6 @@ import java.util.Objects;
 
 
 @MappedSuperclass
-//@EntityListeners(AuditingEntityListener.class)
 @Getter
 @Setter
 public abstract class BaseModel implements Serializable {

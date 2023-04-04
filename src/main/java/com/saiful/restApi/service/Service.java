@@ -12,10 +12,8 @@ public class Service {
     @Autowired
     PostRepo postRepo;
 
-
-
-
     public List<Post> findAll() {
+
         return postRepo.findAll();
     }
 
